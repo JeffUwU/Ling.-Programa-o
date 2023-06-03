@@ -1,3 +1,10 @@
+#config vs
+.vscode/
+./vscode
+/vscode
+
+
+
 # Miscellaneous
 *.class
 *.log
@@ -43,7 +50,3 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-#config vs
-.vscode/
-./vscode
-/vscode
