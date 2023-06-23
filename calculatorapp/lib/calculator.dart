@@ -61,16 +61,3 @@ class Calculator extends StatelessWidget {
     );
   }
 }
-
-class calculator extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Column(
-      children: <Widget>[
-        Display('123')
-        ],
-      )
-    );
-  }
-}
