@@ -1,13 +1,30 @@
 import 'package:calculatorapp/components/display.dart';
+import 'package:calculatorapp/components/keyboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'memoria.dart';
 
 void  main(){
   runApp(MyApp());
 }
 
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+
+  
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final Memory memory = Memory();
+  
+  _onPressed(String command){
+    setState(() {
+      memory.applyCommand(command);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +53,9 @@ class MyApp extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              Display("132.123"),
+              Display(memory.value),
+              Keyboard(_onPressed)
+              
             ],
           )
         ),
