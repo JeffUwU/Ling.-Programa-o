@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'components/display.dart';
 
 // Criação da classe
 class Calculator extends StatelessWidget {
@@ -58,19 +57,6 @@ class Calculator extends StatelessWidget {
               ),
             ),
           )),
-    );
-  }
-}
-
-class calculator extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Column(
-      children: <Widget>[
-        Display('123')
-        ],
-      )
     );
   }
 }

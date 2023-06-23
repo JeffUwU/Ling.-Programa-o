@@ -1,3 +1,4 @@
+// import 'package:calculatorapp/components/display.dart';
 import 'package:flutter/material.dart';
 import './calculator.dart';
 
@@ -10,8 +11,13 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Calculadora',
-      home: Calculator(),
+      home: Column(
+        children: <Widget>[
+          Calculator(),
+          // Display("132.123"),
+
+        ],
+      )
     );
   }
-
 }
