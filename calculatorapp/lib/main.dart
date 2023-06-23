@@ -2,10 +2,10 @@ import 'package:calculatorapp/components/display.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
 void  main(){
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   @override
