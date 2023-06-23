@@ -9,10 +9,10 @@ class Display extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 250,
       color: Colors.black,
       child: Align(
-        alignment: Alignment.topCenter,
+        alignment: Alignment.bottomRight,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: AutoSizeText(
