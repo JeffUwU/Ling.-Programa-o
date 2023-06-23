@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'components/display.dart';
 
 // Criação da classe
 class Calculator extends StatelessWidget {
