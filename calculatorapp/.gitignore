@@ -6,6 +6,10 @@
 
 
 # Miscellaneous
+.vscode/
+/vscode
+./vscode
+
 *.class
 *.log
 *.pyc
